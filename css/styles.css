@@ -3,13 +3,14 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
+
 }
 
 h1 {
   color: #2b2e4a;
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-family: 'Sacramento', ;
 }
 
 h2 {
@@ -26,9 +27,10 @@ font-family: 'Merriweather', serif;
 }
 
 hr {
-  border-top: dotted #eaf6f6;
-  width: 4%;
-  margin: 100px auto;
+margin-left: 20%;
+margin-right: 20%;
+border-color: #e84545;
+    }
 }
 
 p {
@@ -38,7 +40,7 @@ p {
 a {
   color: #e84545;
 font-family: 'Merriweather', serif;
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
     text-decoration: none;
 }
 
@@ -53,8 +55,24 @@ a:hover {
 
 .middle-container {
   margin: 100px 0;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
+.skill-container {
+  margin: 100px 0;
+}
+
+.contact-container {
+  margin: 100px 0;
+}
+
+.project-container {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
 .intro {
   width: 30%;
   margin: auto;
@@ -147,4 +165,113 @@ a:hover {
   background-image: -o-linear-gradient(top, #593cfc, #a1d9ff);
   background-image: linear-gradient(to bottom, #593cfc, #a1d9ff);
   text-decoration: none;
+}
+
+-----------------------------------------
+/* navbar */
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body { font-family:Arial, Helvetica, sans-serif }
+    nav {
+        background:  #e84545;
+        height: 80px;
+        width: 100%;
+    }
+        label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding:0 100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right:20px;
+        }
+            nav ul li{
+                display: inline-block;
+                line-height:80px;
+                margin: 0 5px;
+            }
+                nav ul li a{
+                    color: white;
+                    font-size: 17px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                }
+                    a.active,a:hover{
+                        background-color: #2b2e4a;
+                        transition: .5s;
+                    }
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+        #check{
+           display: none;
+        }
+
+/*--------------------------*/
+/*----- MEDIA QUERRY -----*/
+/*--------------------------*/
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        top: 80px;
+        transition: all .5s;
+        text-align: center;
+        background-color: #2c3e50;
+    }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+            nav ul li a{
+                font-size: 20px;
+            }
+                a:hover,a.active{
+                    background: none;
+                    color: #0082e6;
+                }
+
+        #check:checked ~ ul{
+            left: 0;
+        }
 }
