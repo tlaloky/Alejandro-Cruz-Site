@@ -83,10 +83,12 @@ a:hover {
   padding: 50px 0 20px;
 }
 
+
 .skill-row {
   width: 50%;
   margin: 100px auto 100px auto;
   text-align: left;
+
 
 }
 
@@ -198,7 +200,7 @@ body { font-family:Arial, Helvetica, sans-serif }
             font-weight: bold;
         }
         nav ul{
-            float: right;
+            float: center;
             margin-right:20px;
         }
             nav ul li{
