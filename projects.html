@@ -13,20 +13,60 @@
 
     <script src="index.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  nav {
+    height: 60px;
+    background:  #e84545;
+  }
 
+  nav ul {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 5;
+    padding-top: 10px;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+
+  nav a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: #B8B8B8;
+  }
+
+  .CruzNav {
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+  }
+  .wrapper {
+    height: 100%;
+  }
+  </style>
 </head>
 
 <body>
-  <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a class="active" href="projects.html">Projects</a></li>
 
-  </nav>
+  <div class="wrapper">
+    <nav>
+      <div class="CruzNav">
+        <ul>
+          <li><a href="index.html"><strong>Home</strong></a></li>
+          <li><a href="projects.html"><strong>Projects</strong></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
     <h1>My Projects</h1>
 <br>
 <br>

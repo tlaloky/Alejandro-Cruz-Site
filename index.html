@@ -9,10 +9,61 @@
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
   <script src="index.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  nav {
+    height: 60px;
+    background:  #e84545;
+  }
 
+  nav ul {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 5;
+    padding-top: 10px;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+
+  nav a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #B8B8B8;
+  }
+
+  .CruzNav {
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+  }
+  .wrapper {
+    height: 100%;
+  }
+  </style>
 </head>
 
 <body>
+
+  <div class="wrapper">
+    <nav>
+      <div class="CruzNav">
+        <ul>
+          <li><a href="index.html"><strong>Home</strong></a></li>
+          <li><a href="projects.html"><strong>Projects</strong></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
   <!-- <div class="top-container">
     <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
 
@@ -21,18 +72,12 @@
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
     <img src="images/mountain.png" alt="Mountain Image">
   </div> -->
+  <!--
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
 
-  <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a class="active" href="projects.html">Projects</a></li>
-
-    </ul>
-  </nav>
+  </ul> -->
 
 
   <br>
@@ -44,7 +89,7 @@
   <div class="middle-container">
     <div class="profile">
       <!-- <img src="https://pbs.twimg.com/profile_images/1386516328748654595/xS1tFC9o_400x400.jpg" alt="Alejandros-Twitter-Profile-Picture"> -->
-      <h2>Hello.</h2>
+      <h1>Hello.</h1>
       <p class="intro"><em>Senior at the<strong><a href="https://www.uky.edu/UKHome/">University of Kentucky</a></strong></em></p>
       <p><em>Department of <strong><a href="https://ci.uky.edu/sis/ict">Information Communication Technology</a></strong></em></p>
       <p>I am a senior at the University of Kentucky. My studies focus on Information Communication Technology. I have
@@ -59,7 +104,7 @@
 
 
   </div>
-<br>
+  <br>
   <hr>
 
 
@@ -73,20 +118,20 @@
           <strong> HTML</strong>, <strong> CSS</strong>, <strong>MySql </strong>, <strong>Java</strong>,
           <strong>JavaScript</strong>, <strong>Angular</strong> and <strong>PHP</strong>. I have knowledge
           of the dotnet languages <strong>F#</strong> and <strong>C#</strong>.
-        <br>
-        <img class="game-image" src="images/2.png" alt="game-Design-Icon-by-icongeek26" />
+          <br>
+          <img class="game-image" src="images/2.png" alt="game-Design-Icon-by-icongeek26" />
         <h3>Game Development Specific Skills</h3>
         <p>I have reached proficiency in the Video Game engine <strong>Unity</strong>, and <strong>Unreal Engine</strong>.
           I have also reached proficiency in the development language of <strong>C#</strong>, and <strong>C++</strong></p>
       </div>
     </div>
   </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <hr>
   <div class="contact-container">
     <div class="contact-me">
@@ -104,7 +149,7 @@
     <a class="footer-link" href="https://twitter.com/tlaloky">Twitter</a>
     <p class="copyright">© 2021 Alejandro Cruz.</p>
   </div>
-<br>
+  <br>
 </body>
 
 </html>
